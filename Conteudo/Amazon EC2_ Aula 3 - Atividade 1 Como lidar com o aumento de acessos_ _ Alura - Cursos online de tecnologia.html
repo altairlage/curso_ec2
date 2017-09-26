@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)https://cursos.alura.com.br/course/introducao-ao-cloud-do-ec2-no-aws/task/26862 -->
+<html lang="pt-BR" data-product="alura" class="gr__cursos_alura_com_br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	<title>Amazon EC2: Aula 3 - Atividade 1 Como lidar com o aumento de acessos? | Alura - Cursos online de tecnologia</title>
+	
+	
+<script type="text/javascript" src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/b5f9030682"></script><script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/nr-1044.min.js.download"></script><script type="text/javascript" async="" src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/amplitude-3.0.2-min.gz.js.download"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><link rel="shortcut icon" href="https://cursos.alura.com.br/images/alura/favicon.ico">
+	
+	<link href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+	
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/video-js.fcfc2231.css">
+    <link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/video-js-resolutions.b7de6fd3.css">
+    <link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/prettify.1b9e73a7.css">
+
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/base.78b97371.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/formattedText.781e69ae.css">
+	
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/container.d7849dcf.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/classPage.21eeda42.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/menuSettings.da4e6ad5.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/alternativeList.28f54ad0.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/taskFeedback.4bdd6c19.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/markdown.19173ffa.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/finishSection.0a96466a.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/phrase.6d880b7f.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/hqexplanation.3ed41021.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/openquestion.811813bb.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/textcontent.7298b79f.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/video.45bb70c3.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/singlechoice.05e6d21d.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/music.324695f6.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/multiplechoice.9df58fa7.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/videodialog.fc98d79c.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/fillintheblank.81cde842.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/speakingpractice.5068bb32.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/pronunciationpractice.7d2876f7.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/repetition.0dac6920.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/genericVideo.2942980e.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/taskContent.000f28c0.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/taskButtons.563efe7a.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/markdownEditor.26173654.css">
+	<link rel="stylesheet" href="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/audioPlayer.be1ece2d.css">
+
+	
+	
+	<style type="text/css">
+		.task:before {
+			background-color: #FFE000;
+		}
+	</style>
+	
+	
+	
+	</head>
+<body data-gr-c-s-loaded="true">
+
+<section class="task" data-task-type="video" data-task-id="26862" data-author-id="75042" data-course-code="introducao-ao-cloud-do-ec2-no-aws" data-section-number="3" data-domain="cursos.alura.com.br" data-hasfeedbackanswer="false">
+	<button title="Abrir/Fechar menu" aria-label="Abrir/Fechar menu" type="button" class="openMenu-button task-body-button "></button>
+	
+	<section class="task-body">
+		<header class="task-body-header">
+			<div class="container">
+				<h1 class="task-body-header-title">
+					<svg class="task-body-header-title-svg" aria-label="Atividade de Vídeo">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<small>01</small>
+					<span class="task-body-header-title-text"> Como lidar com o aumento de acessos?</span>
+				</h1>
+				<div class="task-body-header-actions">
+					<a href="https://cursos.alura.com.br/course/introducao-ao-cloud-do-ec2-no-aws/task/26862/next" aria-hidden="true" class="task-actions-button task-actions-button-next task-submit">Próxima Atividade</a>
+				</div>
+			</div>
+		</header>
+		<main class="task-body-main" data-should-warn="false">
+			
+
+
+
+
+
+	
+	
+	
+	
+		
+
+
+
+
+
+	
+	
+		<section class="video" id="task-content">
+			<div class="container">
+				
+
+
+
+
+<div class="settings">
+	<button type="button" class="settings-button" aria-label="Configurações"></button>
+	<div class="settings-box">
+		<span class="settings-box-title"></span>
+		<ul class="settings-box-list">
+			
+				
+				
+					<li class="settings-box-item settings-box-item-player">
+						<button class="video-changePlayer" data-uri="https://player.vimeo.com/video/219909687">
+							Mudar o Player
+							<span hidden="">indisponível</span>
+						</button>
+					</li>
+					
+						
+						
+							
+								<li class="settings-box-item settings-box-item-suggestion"><a href="https://cursos.alura.com.br/suggestions/new/introducao-ao-cloud-do-ec2-no-aws/26862/question">Sugerir Melhoria</a></li>
+							
+						
+					
+				
+				
+			
+			
+		</ul>
+	</div>
+</div>
+				
+
+
+
+<section id="video" class="video-container">
+    
+    <div id="video-container-data" class="" data-section-id="5052" data-course="introducao-ao-cloud-do-ec2-no-aws" data-playback-rate="1.5" data-task-id="26862" data-quality="hd" data-course-id="607" data-gnarus-name="alura">
+
+        
+    <div poster="/images/video/vinheta-alura.png" preload="auto" class="video-js vjs-default-skin video-player-frame video-player vjs-controls-enabled vjs-has-started vjs-paused vjs-ended vjs-user-inactive" id="video-player-frame" style="width: 300px; height: 150px;"><video id="video-player-frame_html5_api" class="vjs-tech" preload="auto" poster="/images/video/vinheta-alura.png" src="https://player.vimeo.com/play/764965545?s=219909687_1506494366_f8d77a7a0cd3ca05ae64ed2abca3275d&amp;loc=external&amp;context=Vimeo%5CController%5CApi%5CResources%5CVideoController.&amp;download=1&amp;filename=607-awsec2-video3.1-Escalando%2Bo%2Bbanco%2Bde%2Bdados174.mp4"><source type="video/mp4" src="https://player.vimeo.com/play/764965545?s=219909687_1506494366_f8d77a7a0cd3ca05ae64ed2abca3275d&amp;loc=external&amp;context=Vimeo%5CController%5CApi%5CResources%5CVideoController.&amp;download=1&amp;filename=607-awsec2-video3.1-Escalando%2Bo%2Bbanco%2Bde%2Bdados174.mp4" data-res="hd"><source type="video/mp4" src="https://player.vimeo.com/play/764965544?s=219909687_1506494366_ea24328771dfe1b296bf53dfadceae3b&amp;loc=external&amp;context=Vimeo%5CController%5CApi%5CResources%5CVideoController.&amp;download=1&amp;filename=607-awsec2-video3.1-Escalando%2Bo%2Bbanco%2Bde%2Bdados164.mp4" data-res="sd"></video><div></div><div class="vjs-poster" tabindex="-1" style="background-image: url(&quot;/images/video/vinheta-alura.png&quot;);"></div><div class="vjs-loading-spinner"></div><div class="vjs-text-track-display vjs-hidden"></div><div class="vjs-big-play-button" role="button" aria-live="polite" tabindex="0" aria-label="play video"><span aria-hidden="true"></span></div><div class="vjs-control-bar"><div class="vjs-play-control vjs-control  vjs-paused" role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Play</span></div></div><div class="vjs-current-time vjs-time-controls vjs-control"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time</span> 5:26</div></div><div class="vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-controls vjs-control"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time</span> 5:26</div></div><div class="vjs-remaining-time vjs-time-controls vjs-control"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time</span> -0:00</div></div><div class="vjs-live-controls vjs-control"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type</span>LIVE</div></div><div class="vjs-progress-control vjs-control"><div role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-progress-holder vjs-slider" aria-label="video progress bar" aria-valuetext="5:26"><div class="vjs-load-progress" style="width: 100%;"><span class="vjs-control-text" style="left: 0%; width: 100%;"><span>Loaded</span>: 0%</span></div><div class="vjs-play-progress" style="width: 99.72%;"><span class="vjs-control-text"><span>Progress</span>: 0%</span></div><div class="vjs-seek-handle vjs-slider-handle" aria-live="off" style="left: 99.44%;"><span class="vjs-control-text">5:26</span></div></div></div><div class="vjs-fullscreen-control vjs-control " role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content"><span class="vjs-control-text">Non-Fullscreen</span></div></div><div class="vjs-volume-control vjs-control"><div role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" tabindex="0" class="vjs-volume-bar vjs-slider" aria-label="volume level" aria-valuetext="100%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div><div class="vjs-volume-handle vjs-slider-handle"><span class="vjs-control-text">00:00</span></div></div></div><div class="vjs-mute-control vjs-control" role="button" aria-live="polite" tabindex="0"><div><span class="vjs-control-text">Mute</span></div></div><div class="vjs-playback-rate vjs-menu-button vjs-control " role="button" aria-live="polite" tabindex="0" aria-haspopup="true"><div class="vjs-control-content"><span class="vjs-control-text">Playback Rate</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item" role="button" aria-live="polite" tabindex="0" aria-selected="false">2x</li><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">1.5x</li><li class="vjs-menu-item" role="button" aria-live="polite" tabindex="0" aria-selected="false">1.2x</li><li class="vjs-menu-item" role="button" aria-live="polite" tabindex="0" aria-selected="false">1x</li><li class="vjs-menu-item" role="button" aria-live="polite" tabindex="0" aria-selected="false">0.8x</li><li class="vjs-menu-item" role="button" aria-live="polite" tabindex="0" aria-selected="false">0.7x</li></ul></div></div><div class="vjs-playback-rate-value">1.5x</div></div><div class="vjs-subtitles-button vjs-menu-button vjs-control  vjs-hidden" role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Subtitles Menu"><div class="vjs-control-content"><span class="vjs-control-text">Subtitles</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">subtitles off</li></ul></div></div></div><div class="vjs-captions-button vjs-menu-button vjs-control  vjs-hidden" role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Captions Menu"><div class="vjs-control-content"><span class="vjs-control-text">Captions</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-item vjs-selected" role="button" aria-live="polite" tabindex="0" aria-selected="true">captions off</li></ul></div></div></div><div class="vjs-chapters-button vjs-menu-button vjs-control  vjs-hidden" role="button" aria-live="polite" tabindex="0" aria-haspopup="true" aria-label="Chapters Menu"><div class="vjs-control-content"><span class="vjs-control-text">Chapters</span><div class="vjs-menu"><ul class="vjs-menu-content"><li class="vjs-menu-title">Chapters</li></ul></div></div></div><div class="vjs-HD-button vjs-control" role="button" aria-live="polite" tabindex="0"><div class="vjs-control-content">HD</div></div></div><div class="vjs-error-display"><div></div></div><div class="vjs-caption-settings vjs-modal-overlay vjs-hidden"><div class="vjs-tracksettings"><div class="vjs-tracksettings-colors"><div class="vjs-fg-color vjs-tracksetting"><label class="vjs-label">Foreground</label><select><option value="">---</option><option value="#FFF">White</option><option value="#000">Black</option><option value="#F00">Red</option><option value="#0F0">Green</option><option value="#00F">Blue</option><option value="#FF0">Yellow</option><option value="#F0F">Magenta</option><option value="#0FF">Cyan</option></select><span class="vjs-text-opacity vjs-opacity"><select><option value="">---</option><option value="1">Opaque</option><option value="0.5">Semi-Opaque</option></select></span></div><div class="vjs-bg-color vjs-tracksetting"><label class="vjs-label">Background</label><select><option value="">---</option><option value="#FFF">White</option><option value="#000">Black</option><option value="#F00">Red</option><option value="#0F0">Green</option><option value="#00F">Blue</option><option value="#FF0">Yellow</option><option value="#F0F">Magenta</option><option value="#0FF">Cyan</option></select><span class="vjs-bg-opacity vjs-opacity"><select><option value="">---</option><option value="1">Opaque</option><option value="0.5">Semi-Transparent</option><option value="0">Transparent</option></select></span></div><div class="window-color vjs-tracksetting"><label class="vjs-label">Window</label><select><option value="">---</option><option value="#FFF">White</option><option value="#000">Black</option><option value="#F00">Red</option><option value="#0F0">Green</option><option value="#00F">Blue</option><option value="#FF0">Yellow</option><option value="#F0F">Magenta</option><option value="#0FF">Cyan</option></select><span class="vjs-window-opacity vjs-opacity"><select><option value="">---</option><option value="1">Opaque</option><option value="0.5">Semi-Transparent</option><option value="0">Transparent</option></select></span></div></div><div class="vjs-tracksettings-font"><div class="vjs-font-percent vjs-tracksetting"><label class="vjs-label">Font Size</label><select><option value="0.50">50%</option><option value="0.75">75%</option><option value="1.00" selected="">100%</option><option value="1.25">125%</option><option value="1.50">150%</option><option value="1.75">175%</option><option value="2.00">200%</option><option value="3.00">300%</option><option value="4.00">400%</option></select></div><div class="vjs-edge-style vjs-tracksetting"><label class="vjs-label">Text Edge Style</label><select><option value="none">None</option><option value="raised">Raised</option><option value="depressed">Depressed</option><option value="uniform">Uniform</option><option value="dropshadow">Dropshadow</option></select></div><div class="vjs-font-family vjs-tracksetting"><label class="vjs-label">Font Family</label><select><option value="">Default</option><option value="monospaceSerif">Monospace Serif</option><option value="proportionalSerif">Proportional Serif</option><option value="monospaceSansSerif">Monospace Sans-Serif</option><option value="proportionalSansSerif">Proportional Sans-Serif</option><option value="casual">Casual</option><option value="script">Script</option><option value="small-caps">Small Caps</option></select></div></div></div><div class="vjs-tracksettings-controls"><button class="vjs-default-button">Defaults</button><button class="vjs-done-button">Done</button></div></div></div></div>
+</section>
+				
+					<h2 class="video-transcription-title">Transcrição</h2>
+					<section id="transcription" class="video-transcription transcription-toggle">
+						<div class="formattedText">
+								<h2>A nossa aplicação vai atender a demanda?</h2>
+<p>É muito comum que o nosso número de acessos aumente com o sucesso das lojas relacionadas e isso não é exatamente um problema, na verdade, quanto mais gente acessar nosso catálogo melhor, certo? Mas o problema na verdade é quando a nossa máquina acaba não sendo suficiente para suportar toda essa carga de acessos simultâneos onde ela acaba caindo e a aplicação, por consequência, indisponível. </p>
+<p><img src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/indisponivel.png" alt="Aplicação indisponível"></p>
+<p>Essa situação ocorre também quando há alguma atração para os usuários o que pode ser, por exemplo, promoção e ofertas em algum determinado horário. Nesse caso, essa quantidade maior (pico) de acessos ocorrerá apenas em uma fração do tempo em que a aplicação fica disponível.</p>
+<p>A questão é: <strong>como fazer a aplicação continuar disponível mesmo com o aumento dos acessos</strong>? </p>
+<h2>Escalabilidade vertical</h2>
+<p>A primeira ideia é melhorar a instância em sim. Isso significa melhorar o CPU, HD ou a memória RAM para poder atender mais clientes. Na AWS EC2 isso é muito fácil de fazer basta parar a instancia e mudar o tipo da instância (Menu <em>Instance Settings -&gt; Change Instance Type</em>).</p>
+<p><img src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/instance-settings.png" alt="Instance Settigns"></p>
+<p>Lembra-se, para alterar o tipo da instância é preciso parar ela antes.</p>
+<p>A escalabilidade vertical é muito simples de aplicar mas tem dois problemas: 1) saímos da faixa gratuita e é preciso pagar para instancias mais poderosas (pode ficar caro). E 2) ela é bastante limitada pois mesmo a melhor instância na EC2 talvez não seja boa suficiente para atender todos os cliente ao mesmo tempo. </p>
+<p>Além disso, continuamos com o problema da disponibilidade. Se essa instancia cai, toda a aplicação fica offline.</p>
+<h2>Escalabilidade horizontal</h2>
+<p>Uma outra abordagem então seria continuar com a faixa gratuita da AWS e usar uma segunda maquina para rodar a aplicação. Essa nova instância pode atender novos clientes e aumenta a disponibilidade:</p>
+<p><img src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/duas-instancias.png" alt="Duas instâncias no EC2"></p>
+<p>Essa forma de crescer a aplicação também é chamado de <em>escalabilidade horizontal</em>. O problema ainda é que temos a servidor web e o banco de dados instalado na mesma maquina. Os dados da aplicação devem ficar centralizados e ambos os servidores devem utilizar o mesmo banco de dados para não causar inconsistências nos nossos dados.</p>
+<p>Para resolver isso vamos criar uma instância dedicada para o banco de dados, separados dos servidores web. Os servidores web vão acessar o mesmo banco de dados e sempre ler e gravar os dados do mesmo lugar:</p>
+<p><img src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/duas-instancias-e-bd.png" alt="Duas instâncias e banco separado"></p>
+<h2>Escalar e configurar o banco</h2>
+<p>Repare que nossa arquitetura está crescendo e com isso vem outros problemas. Como gerenciar tudo isso e como garantir que as instalações e permissões estão corretas? Isso principalmente importante para o banco de dados pois agora estamos acessando ele remotamente. Como podemos garantir que o banco fica disponível para as instâncias com um bom desempenho. Também queremos uma configuração simples, de alto nível com backups automáticos:</p>
+<p><img src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/duas-instancias-e-bd2.png" alt="Duas instâncias e banco separado"></p>
+<p>Todas essas questões (e outras) não são tão fácil de resolver e por isso a AWS já oferece um serviço chamado de Amazon RDS (Relational Data Service) que veremos no próximo vídeo. </p>
+
+						</div>
+					</section>
+					<button class="video-transcription-button transcription-toggle" aria-hidden="true" style="display: none;">
+						<span class="video-transcription-button-text">continuar lendo</span>
+					</button>
+				
+			</div>
+		</section>
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+			
+				
+
+
+
+<section class="task-actions">
+	<div class="container">
+		
+
+
+
+
+
+<a href="https://cursos.alura.com.br/forum/curso-introducao-ao-cloud-do-ec2-no-aws/exercicio-como-lidar-com-o-aumento-de-acessos/26862/novo" class=" task-actions-button task-actions-button-forum" data-amplitude-onsubmit="{&quot;name&quot;:&quot;help-needed&quot;,&quot;course-code&quot;:&quot;introducao-ao-cloud-do-ec2-no-aws&quot;,&quot;task-id&quot;:&quot;26862&quot;,&quot;task-kind&quot;:&quot;Vídeo&quot;}">Tirar Dúvida</a><!--
+		 --><a href="https://cursos.alura.com.br/course/introducao-ao-cloud-do-ec2-no-aws/task/26862/next" class="task-actions-button task-body-actions-button task-actions-button-next">Próxima Atividade</a>
+	</div>
+</section>
+			
+		</main>
+	</section>
+	
+
+
+
+
+
+
+
+
+
+
+
+<aside class="task-menu" style="position: fixed; transform: translateY(-384.156px);">
+	<section class="task-menu-header">
+		<button title="Abrir/Fechar menu" aria-label="Abrir/Fechar menu" type="button" class="openMenu-button task-menu-button "></button>
+		<div class="task-menu-header-info">
+			<a class="task-menu-header-info-title" href="https://cursos.alura.com.br/course/introducao-ao-cloud-do-ec2-no-aws" title="Ir para página do curso">
+				<img src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/introducao-ao-cloud-do-ec2-no-aws.svg" alt="ícone Amazon EC2: Faça um deploy da sua webapp com alta disponibilidade e escalabilidade." class="task-menu-header-info-title-icon " width="37.5px" height="37.5px">
+				<h2 class="task-menu-header-info-title-text">Amazon EC2: Faça um deploy da sua webapp com alta disponibilidade e escalabilidade.</h2>
+			</a>
+			<div class="task-menu-header-info-progress">
+				
+				<span class="task-menu-header-info-progress-percentage ">28%</span>
+				<span class="task-menu-header-info-progress-bar" style="background-image: linear-gradient(to right, #9de482, #9de482 28%, transparent 28%);"></span>
+			</div>
+		</div>
+	</section>
+	
+	<section class="task-menu-section">
+		<div class="task-menu-section-title">
+			<span class="task-menu-section-title-number ">Aula<strong>03</strong>
+				<span>de 09</span></span>
+			<h3 class="task-menu-section-title-text">
+				Escalando o banco de dados com RDS
+			</h3>
+		</div>
+	</section>
+	<nav class="task-menu-nav">
+		<h2 class="task-menu-nav-title">
+			Atividades
+			<span>1 de 12</span>
+		</h2>
+		<ul class="task-menu-nav-list">
+			
+				<li class="task-menu-nav-item task-menu-nav-item--selected">
+					<a href="https://cursos.alura.com.br/course/introducao-ao-cloud-do-ec2-no-aws/task/26862" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg task-menu-nav-item-svg--done" aria-label="Atividade de Vídeo concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">01</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Como lidar com o aumento de acessos?">
+							Como lidar com o aumento de acessos?
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">06min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/introducao-ao-cloud-do-ec2-no-aws/task/27542" class="task-menu-nav-item-link task-menu-nav-item-link-MULTIPLE_CHOICE">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade de Múltipla Escolha não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#MULTIPLE_CHOICE"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">02</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Escalabilidade de uma aplicação">
+							Escalabilidade de uma aplicação
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/introducao-ao-cloud-do-ec2-no-aws/task/27553" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade de Única Escolha não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">03</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Um banco a parte">
+							Um banco a parte
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/introducao-ao-cloud-do-ec2-no-aws/task/27605" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade de Única Escolha não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">04</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Escalabilidade vertical vs horizontal">
+							Escalabilidade vertical vs horizontal
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/introducao-ao-cloud-do-ec2-no-aws/task/27369" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Vídeo não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">05</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Configurando o Amazon RDS">
+							Configurando o Amazon RDS
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">10min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/introducao-ao-cloud-do-ec2-no-aws/task/27370" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Vídeo não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">06</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Testando através de um cliente MySQL">
+							Testando através de um cliente MySQL
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">02min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/introducao-ao-cloud-do-ec2-no-aws/task/27545" class="task-menu-nav-item-link task-menu-nav-item-link-SINGLE_CHOICE">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade de Única Escolha não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#SINGLE_CHOICE"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">07</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Testando o RDS">
+							Testando o RDS
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/introducao-ao-cloud-do-ec2-no-aws/task/27371" class="task-menu-nav-item-link task-menu-nav-item-link-VIDEO">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Vídeo não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#VIDEO"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">08</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Usando RDS no EC2">
+							Usando RDS no EC2
+						</span>
+						
+						<span class="task-menu-nav-item-infos">
+							
+								<span class="task-menu-nav-item-videoDuration" title="Ir para o Vídeo">08min</span>
+							
+						</span>
+					</span>
+					
+					</a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/introducao-ao-cloud-do-ec2-no-aws/task/27549" class="task-menu-nav-item-link task-menu-nav-item-link-MULTIPLE_CHOICE">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade de Múltipla Escolha não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#MULTIPLE_CHOICE"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">09</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Conectando o EC2 ao RDS">
+							Conectando o EC2 ao RDS
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/introducao-ao-cloud-do-ec2-no-aws/task/27626" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Explicação não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">10</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Para saber mais: Múltiplas Zonas de Disponibilidade">
+							Para saber mais: Múltiplas Zonas de Disponibilidade
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/introducao-ao-cloud-do-ec2-no-aws/task/27554" class="task-menu-nav-item-link task-menu-nav-item-link-TEXT_CONTENT">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Atividade sem Resposta do Aluno não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#TEXT_CONTENT"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">11</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="Consolidando seu conhecimento">
+							Consolidando seu conhecimento
+						</span>
+						
+					</span></a>
+				</li>
+			
+				<li class="task-menu-nav-item ">
+					<a href="https://cursos.alura.com.br/course/introducao-ao-cloud-do-ec2-no-aws/task/27622" class="task-menu-nav-item-link task-menu-nav-item-link-HQ_EXPLANATION">
+					<svg class="task-menu-nav-item-svg " aria-label="Atividade de Explicação não concluída">
+						<use xlink:href="/images/gnarus/classPage/icon-menu-icons.svg#HQ_EXPLANATION"></use>
+					</svg>
+					<span class="task-menu-nav-item-number">12</span>
+					<span class="task-menu-nav-item-text">
+						<span class="task-menu-nav-item-title" title="O que aprendemos?">
+							O que aprendemos?
+						</span>
+						
+					</span></a>
+				</li>
+			
+		</ul>
+	</nav>
+	<section class="task-menu-sections">
+		<h2 class="task-menu-sections-title">
+			Aulas
+		</h2>
+		<select class="task-menu-sections-select" onchange="location.href=&#39;/course/introducao-ao-cloud-do-ec2-no-aws/section/&#39;+this.value;">
+			
+				<option value="1">01. Introdução ao Cloud Computing</option>
+			
+				<option value="2">02. Montando nosso primeiro ambiente no EC2</option>
+			
+				<option value="3" selected="">03. Escalando o banco de dados com RDS</option>
+			
+				<option value="4">04. Mais maquinas no EC2</option>
+			
+				<option value="5">05. Escalabilidade horizontal com Classic Load Balancer</option>
+			
+				<option value="6">06. Publicando versões diferentes com Application Load Balancer</option>
+			
+				<option value="7">07. Usando Sticky Session</option>
+			
+				<option value="8">08. Escalando EC2 automaticamente</option>
+			
+				<option value="9">09. Configurando o EC2 com o AWS CLI</option>
+			
+		</select>
+	</section>
+	<section class="task-menu-others">
+		<h2 class="task-menu-others-title ">
+			Outros Links
+		</h2>
+		<a href="https://cursos.alura.com.br/forum/curso-introducao-ao-cloud-do-ec2-no-aws/todos" class="task-menu-others-link task-menu-others-link-forum " title="Ir para o fórum do curso">Fórum</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-others-link task-menu-others-link-curso" title="Ir para a página principal">Trocar Curso</a>
+	</section>
+	<section class="task-menu-footer">
+		<a class="task-menu-footer-user" href="https://cursos.alura.com.br/user/altair-lage" title="Ir para sua página de usuário">
+			<img src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/846d7bad034e3c292bc8e433e11b4683.png" alt="Gravatar de Altair Lage" class="task-menu-footer-img" width="40px" height="40px">
+			
+				<p class="task-menu-footer-detalhes">
+					<span class="task-menu-footer-detalhes-nome">Altair Lage</span>
+					<span class="task-menu-footer-detalhes-xp">
+						29.9k xp
+					</span>
+				</p>
+			
+			<input type="hidden" value="">
+			<input type="hidden" value="">
+		</a>
+		<a href="https://cursos.alura.com.br/dashboard" class="task-menu-footer-logo">
+			<img src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/icon-menu-alura.svg" alt="Logo da Alura" class="task-menu-footer-logo-image" width="19px" height="32px" title="Ir para a página principal">
+		</a>
+	</section>
+</aside>
+</section>
+
+
+
+
+	<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/jquery-2.1.3.min.32015dd4.js.download"></script>
+	<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/buttonToggle.83185c05.js.download" async=""></script>
+	<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/sectionMenu.ba849510.js.download" async=""></script>
+
+	<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/marked.98ce0051.js.download"></script>
+	<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/markdownEditor.f940de44.js.download" async=""></script>
+	<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/caret.637d95c2.js.download" async=""></script>
+	<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/keydownWatchers.67f33811.js.download" async=""></script>
+	<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/prettify.4992e3fe.js.download" async=""></script>
+
+	<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/preventsDoubleClick.0a7a943f.js.download" async=""></script>
+	<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/assessment.050f656f.js.download" async=""></script>
+	<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/login-form.1730703f.js.download" async=""></script>
+	<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/classPage.6753ca8e.js.download"></script>
+	<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/aria.0b529edd.js.download"></script>
+	<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/phrase.80dcd2b8.js.download"></script>
+	<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/feedback.2d335882.js.download"></script>
+	
+	
+		<!-- video specific -->
+		<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/scroll-top.e8169412.js.download"></script>
+		<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/video.00bc6850.js.download"></script>
+		<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/vimeo.7a8597b8.js.download"></script>
+		<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/videojs.ga.6de1a69f.js.download"></script>
+		<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/video-js-resolutions.2f412037.js.download"></script>
+		<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/video.573ffe46.js.download"></script>
+	
+
+	
+	
+	
+	
+
+	<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/partitura.977fb5b2.js.download"></script>
+	<script src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/audioProgress.6f445a1c.js.download"></script>
+
+	
+	
+	
+		
+
+<script type="text/javascript" src="./Amazon EC2_ Aula 3 - Atividade 1 Como lidar com o aumento de acessos_ _ Alura - Cursos online de tecnologia_files/amplitude.f1f6e4b7.js.download"></script>
+
+<script>
+
+	amplitudeInit("84647047775d06b4051d80eccd387bd3");
+	
+	
+		var userProperties = {"name":"Altair Lage","email":"altair.lage@datablink.com"};
+		amplitudeIdentify("75042", userProperties);
+	
+	
+	
+
+	
+	
+	$('[data-amplitude]').on('click', function(){
+		var data = $(this).data().amplitude;
+		track(data);
+	});
+	
+</script>
+
+		
+			<script>
+				track({"section-id":"5052","name":"section-started","course-code":"introducao-ao-cloud-do-ec2-no-aws"});
+			</script>
+		
+		
+			<script>
+				track({"name":"task-seen","course-code":"introducao-ao-cloud-do-ec2-no-aws","task-id":"26862","task-kind":"Vídeo"});
+			</script>
+		
+	
+	
+ 
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","licenseKey":"b5f9030682","agent":"","beacon":"bam.nr-data.net","applicationTime":51,"applicationID":"12544460","transactionName":"ZVFTNhEEXEdTWkdeV1wbchcQEV1ZHVtBGVtdWR8BAgBeQV8XVFlZQEFCTAsEQFhXQEJCUVxaHwEMC0ZGXVVfUkocZ1QBFwxdWnFWXUNKXVhdBxFKQVxdTmdWS1k=","queueTime":0}</script>
+
+<style type="text/css">.vjs-control.vjs-HD-button { color: #36D8DE; font-weight:bold; text-shadow: 0 0 1em #fff;}</style></body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
